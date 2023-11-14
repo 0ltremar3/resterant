@@ -1,0 +1,34 @@
+<!-- 地图 -->
+<map class="map" markers="{{markers}}" data-marker="{{markers[0]}}"
+ bindmarkertap="clickMap"
+  longitude="{{markers[0].longitude}}" 
+  latitude="{{markers[0].latitude}}" scale="16" show-location />
+<view>地址：{{address}}</view>
+<view bindtap="callPhone" 
+data-phone="{{phone}}">电话：{{phone}}（可点击拨打）</view>
+<view bindtap="copyWechat" 
+data-weixin="{{weixin}}">微信：{{weixin}}(可复制)</view>
+
+<!-- 位置 -->
+<view class="category_root">
+<view class="category_item" >
+<view class="start_1">营业 遵义医科大学①号食堂</view>
+<view class="start_2">贵州省遵义市红花岗区学府西路6号遵义医科大学</view>
+<view class="start_3">门店营业时间</view>
+<view class="start_4">门店电话</view>
+  <image class="category_item_image" src="/images/shangpin.png"> 
+  </image>
+  <text class="categroy_item_title" bindtap="click1">去订座
+  </text>
+</view>
+<view class="category_item" >
+  <view class="start_1">营业 遵义医科大学②号食堂</view>
+<view class="start_2">贵州省遵义市红花岗区学府西路6号遵义医科大学</view>
+<view class="start_3">门店营业时间</view>
+<view class="start_4">门店电话</view>
+  <image class="category_item_image" src="/images/shangpin.png"> 
+  </image>
+  <text class="categroy_item_title" bindtap="click2">去订座
+  </text>
+</view>
+</view>

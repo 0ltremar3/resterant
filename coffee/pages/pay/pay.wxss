@@ -1,0 +1,79 @@
+.pay {
+  width: 750rpx;
+}
+/* 支付页面的样式 */
+.pay .shpo-item {
+  width: 100%;
+  border-top: 3px solid #c0c0c0;
+}
+.pay .shpo-item .card .aaa {
+  height: 80rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+/* 确认支付页面样式 */
+.pay .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 400rpx;
+  background-color: rgb(236, 252, 255);
+  transform: translate(-50%, -50%);
+  border-radius: 36rpx;
+}
+.pay .wrapper .title {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rpx;
+}
+.pay .wrapper .money {
+  font-size: 42rpx;
+  font-weight: bold;
+}
+/* 支付方式 */
+.pay .wrapper .fs {
+  width: 80%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2rpx solid #dd6f6f;
+  border-bottom: 2rpx solid #dd6f6f;
+  margin: 15rpx 0;
+}
+.pay .wrapper .fs .right {
+  display: flex;
+  align-items: center;
+}
+.pay .wrapper .fs .right .ye {
+  color: #000000;
+}
+.pay .wrapper .fs .right image {
+  width: 50rpx;
+  height: 50rpx;
+}
+/* 确认支付按钮样式 */
+.pay .wrapper .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  width: 280rpx;
+  height: 100rpx;
+  border-radius: 32rpx;
+  background-color: #07C160;
+  margin-top: 10rpx;
+}
+/* 优惠券 */
+.pay .youhuijuan {
+  margin-left: 30rpx;
+  color: #fa3a00;
+}

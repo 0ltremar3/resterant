@@ -1,0 +1,37 @@
+<!-- 九宫格 -->
+<view  class="category_root">
+  <view class="category_item" bindtap="click4">
+  <image class="category_item_image" src="/images/icons/paihao.png">
+   </image>
+  <!-- <text class="categroy_item_title">
+  </text> -->
+</view><view class="category_item" bindtap="click5">
+  <image class="category_item_image" src="/images/icons/waimai.png">
+   </image>
+  <!-- <text class="categroy_item_title">
+  </text> -->
+</view>
+</view>
+<view class="category_root">
+<view class="category_item" bindtap="click1">
+  <image class="category_item_image" src="/images/icons/zuowei.png ">
+   </image>
+  <!-- <text class="categroy_item_title">
+  </text> -->
+</view>
+<view class="category_item" bindtap="click2">
+  <image class="category_item_image" src="/images/icons/tangshi.png">
+   </image>
+  <!-- <text class="categroy_item_title">
+  </text> -->
+</view>
+<view class="category_item" bindtap="click3">
+  <image class="category_item_image" src="/images/icons/ziqu.png">
+   </image>
+  <!-- <text class="categroy_item_title">
+  </text> -->
+</view>
+</view>
+
+
+

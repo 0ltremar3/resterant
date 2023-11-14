@@ -1,0 +1,13 @@
+<view class="container">
+<picker mode="date" bindchange="bindDateChange">
+<view>选择预约日期：{{date}}</view>
+</picker>
+
+<input placeholder="预约人数：" type="number" bindinput="bindPeopleInput"/>
+
+<input placeholder="联系电话：" type="text" bindinput="bindPhoneInput"/>
+
+<input placeholder="姓名：" type="text" bindinput="bindNameInput"/>
+
+<button bindtap="submitReservation">提交预约</button>
+</view>

@@ -1,0 +1,53 @@
+
+/* 地图 */
+.map{
+  margin-top: 40rpx;
+  width:100%; 
+  height:400rpx;
+}
+/*九宫格订座区域*/
+.category_root{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20rpx 20rpx;
+}
+/* 大框格式 */
+.category_item{
+  display: flex;
+  flex-direction: column;
+  width: 150rpx;
+  height: 150rpx;
+  text-align: center;
+  margin: 20rpx;
+  border-radius: 30rpx;
+  width: 700rpx;
+  height: 350rpx;
+  align-items: center;
+  border: solid rgb(0, 0, 0) 5rpx;
+  background-color: rgb(255, 255, 255);
+  /* border-bottom:4px solid rgb(196, 196, 196) */
+}
+.categroy_item_title{
+  border: solid rgb(255, 5, 5) 8rpx;
+  font-size: 40rpx;
+  font-weight: 900;
+ margin-left:500rpx;
+ margin-bottom: 100rpx;
+}
+/* 地址内容设置 */
+.start_1{
+margin-right: 270rpx;
+}
+.start_2{
+  margin-right: 230rpx;
+ font-size: 21rpx;
+}
+.start_3{
+  margin-right: 460rpx;
+  font-weight: 900;
+}
+.start_4{
+  margin-right: 525rpx;
+  font-weight: 900;
+}

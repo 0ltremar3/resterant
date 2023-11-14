@@ -1,0 +1,55 @@
+.my_luck {
+  width: 750rpx;
+  height: 100vh;
+  background-color: #EDEDED;
+}
+.my_luck .con {
+  width: 750rpx;
+  background-color: #EDEDED;
+  overflow: hidden;
+}
+.my_luck .con .item {
+  width: 690rpx;
+  height: 200rpx;
+  background-color: white;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  font-size: 36rpx;
+}
+.my_luck .con .item .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20rpx;
+  height: 180rpx;
+}
+.my_luck .con .item .left .shijian {
+  color: gray;
+  font-size: 32rpx;
+}
+/* 带使用按钮 */
+.my_luck .con .item .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160rpx;
+  height:80rpx;
+  background-color: #ffae00;
+  color: rgb(0, 0, 0);
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+/* 未抽奖时页面样式 */
+.my_luck .kong {
+  background-color: #EDEDED;
+  width: 750rpx;
+  height: 200rpx;
+  color: rgb(150, 147, 147);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

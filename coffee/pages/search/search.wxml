@@ -1,0 +1,47 @@
+<!-- 搜索区域 -->
+<view class="search">
+  <van-search
+    value="{{ value }}"
+    shape="round"
+    background="#8dd9cc"
+    placeholder="请输入搜索内容"
+    bind:change="changeTitle"
+  />
+  <view class="conent">
+    <view
+      class="conent-item"
+      wx:for="{{dataList}}"
+      wx:key="this"
+      bind:tap="goDetail"
+      data-obj="{{item}}"
+    >
+      <view class="img">
+        <image src="{{item.img}}" />
+      </view>
+      <view class="left">
+        <view class="title">{{item.title}}</view>
+        <view class="jianjie">原料：{{item.yuanliao}}</view>
+        <view class="biaoqian">
+          <view>
+            <text>￥: {{item.money}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="right">
+        <view
+          class="btn"
+          data-item="{{item}}"
+          catch:tap="addCart"
+        >
+          <van-icon
+            name="cart-o"
+            size="15px"
+            color="d2f1dc"
+          />
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+

@@ -1,0 +1,25 @@
+<!-- <view class="container">
+<view class="first">门店列表</view>
+<view>我的订座</view>
+<image src="/picture/md.png"></image>
+</view> -->
+
+<!-- 九宫格 -->
+<view class="category_root">
+<view class="category_item" bindtap="click1">
+  <!-- <image class="category_item_image" src="/images/icons/yy.jpg ">
+   </image> -->
+  <text class="categroy_item_title">门店列表
+  </text>
+</view>
+</view>
+
+<view class="category_root">
+  <view class="category_item" bindtap="click2">
+  <!-- <image class="category_item_image" 
+  src="/images/icons/ts.jpg ">
+   </image> -->
+  <text class="categroy_item_title">我的订座
+  </text>
+</view>
+</view>
