@@ -1,0 +1,37 @@
+<!-- goorder.wxml -->
+<view class="booking-container">
+  <!-- 日期选择 -->
+  <scroll-view class="date-scroll" scroll-x="true">
+    <view class="date-item" wx:for="{{dates}}" wx:key="*this" bindtap="onDateTap" data-date="{{item.fullDate}}">
+      <view class="date-week {{item.fullDate === selectedDate ? 'selected' : ''}}">{{item.week}}</view>
+      <view class="date-day {{item.fullDate === selectedDate ? 'selected' : ''}}">{{item.day}}</view>
+    </view>
+  </scroll-view>
+
+  <!-- 时间选择 -->
+  <view class="timeslot-container">
+    <block wx:for="{{timeslots}}" wx:key="index">
+      <view class="timeslot" data-timeslot="{{item}}">
+        <view class="time">{{item}}</view>
+        <view class="seats {{selectedSeats == '2' && selectedTimeslot == item ? 'selected' : ''}}" data-timeslot="{{item}}" data-seats="2" bindtap="onTimeslotSelect">
+          2人座
+        </view>
+        <view class="seats {{selectedSeats == '4' && selectedTimeslot == item ? 'selected' : ''}}" data-timeslot="{{item}}" data-seats="4" bindtap="onTimeslotSelect">
+          4人座
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 动态文本提醒 -->
+  <view class="reminder-text">
+    {{reminderText}}
+  </view>
+
+  <!-- 联系信息 -->
+  <view class="contact-info">
+    <input class="input" placeholder="姓名/昵称:" bindinput="inputName" />
+    <input class="input" placeholder="联系电话:" bindinput="inputPhone" value="{{userPhone}}"/>
+    <button class="submit-btn" bindtap="onSubmit">提交预约</button>
+  </view>
+</view> 

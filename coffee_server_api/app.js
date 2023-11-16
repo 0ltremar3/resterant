@@ -9,6 +9,7 @@ const fs = require("fs");   // 引入 fs文件上传
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var bookingRouter = require('./routes/booking');
 
 var app = express();
 // 改写, 从bin目录下剪切代码过来 , 然后就可以删除bin目录了
@@ -25,12 +26,11 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
 
 app.use('/', indexRouter);
+app.use('/booking', bookingRouter);
 app.use('/users', usersRouter);
-
-
-
 
 
 //图片上传

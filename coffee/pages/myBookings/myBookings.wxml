@@ -1,0 +1,19 @@
+<!-- pages/myBookings/myBookings.wxml -->
+<view class="container">
+  <view class="booking-list">
+    <block wx:for="{{bookings}}" wx:key="bookingId">
+      <view class="booking-item">
+        <view class="header-container">
+          <view class="canteen-name">{{item.canteenName}}</view>
+          <view class="seats">{{item.bookingSeats}}人座</view>
+          <!-- <view>预约状态：{{item.bookingStatus}}</view> -->
+        </view>
+        <view>预约日期：{{item.bookingDate}}</view>
+        <view>时间段：{{item.bookingTime}}</view>
+        <view>姓名：{{item.userName}}</view>
+        <view>电话：{{item.userPhone}}</view>
+        <button class="delete-btn" bindtap="deleteBooking" data-id="{{item.bookingId}}">删除预约</button>
+      </view>
+    </block>
+  </view>
+</view>

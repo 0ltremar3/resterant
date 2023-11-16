@@ -1,0 +1,61 @@
+/* pages/myBookings/myBookings.wxss */
+.container {
+  padding: 20px;
+}
+
+.booking-list {
+  margin-top: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.seats {
+  color: #797575; 
+}
+
+.booking-item {
+  position: relative; /* 使子元素的定位相对于此元素 */
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.canteen-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  flex-grow: 1; 
+}
+.delete-btn {
+  color: #d9534f; /* 一个较深的红色调以增加对比，适合背景 */
+  background-color: #f2dede; /* 红色调的背景色，通常是较浅的红色 */
+  margin-bottom: 5px; /* 保持与营业中状态相同的边距 */
+  font-size: 14px; /* 文字大小保持一致 */
+  margin-top: 24px;
+}
+
+.delete-btn:hover {
+  background-color: #a80606; /* 鼠标悬停时的背景颜色 */
+}
+
+.green {
+  color: green; /* 根据营业状态调整颜色 */
+  padding: 4px 8px; /* 状态标签的内边距 */
+  border-radius: 4px; /* 轻微的圆角边框 */
+  background-color: #def1de; /* 背景颜色，可以根据状态改变 */
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.red {
+  color: #d9534f; /* 一个较深的红色调以增加对比，适合背景 */
+  padding: 4px 8px; /* 状态标签的内边距，保持一致性 */
+  border-radius: 4px; /* 圆角边框，与营业中状态一致 */
+  background-color: #f2dede; /* 红色调的背景色，通常是较浅的红色 */
+  margin-bottom: 5px; /* 保持与营业中状态相同的边距 */
+  font-size: 14px; /* 文字大小保持一致 */
+}
+

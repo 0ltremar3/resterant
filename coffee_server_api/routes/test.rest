@@ -1,0 +1,52 @@
+@host = http://127.0.0.1:5000
+
+### 创建预约
+POST {{host}}/booking/createBooking
+Content-Type: application/json
+
+{
+  "userName": "John Doe",
+  "userId": 123,
+  "userPhone": "1897432454",
+  "bookingDate": "2023-09-15",
+  "bookingSeats": "4",
+  "bookingTime": "18:00",
+  "bookingStatus": "pending",
+  "canteenName": "Canteen 1"
+}
+
+###
+
+### 获取预约列表
+GET {{host}}/booking/getBookings
+
+### 根据用户id获取预约列表
+GET {{host}}/booking/getBookingsByUserId/123
+
+###
+
+### 更新预约
+# 使用实际的bookingId来替换下面的123
+POST {{host}}/booking/updateBooking
+Content-Type: application/json
+
+{
+  "bookingId": 123,
+  "bookingDate": "2023-09-16",
+  "bookingSeats": "2",
+  "bookingTime": "19:00",
+  "bookingStatus": "confirmed"
+}
+
+###
+
+### 删除预约
+# 使用实际的bookingId来替换下面的1
+DELETE {{host}}/booking/deleteBooking
+Content-Type: application/json
+
+{
+  "bookingId": 2
+}
+
+###

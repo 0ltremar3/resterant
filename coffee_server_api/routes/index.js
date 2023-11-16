@@ -149,6 +149,7 @@ router.get('/getData', (req, res) => {
   });
 });
 
+
 // 添加到收藏
 router.get('/addSart', (req, res) => {
     console.log(req.query);   
@@ -1002,6 +1003,24 @@ router.get('/delLuck', (req, res) => {
     })
 })
 
+
+router.get('/getCanteens', (req, res) => {    
+    var sql = "select * from canting";
+    db.query(sql, (err, data) => {
+        if (err) {
+            res.send({
+                code: 500,
+                msg: "获取失败"
+            })
+        } else {
+            res.send({
+                list: data,
+                code: 200,
+                 msg: "获取数据成功"
+            })
+        }
+    });
+  });
   
 
 module.exports = router;

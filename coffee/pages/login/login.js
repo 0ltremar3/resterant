@@ -64,6 +64,7 @@ Page({
               showCancel:false,
               success:(res2)=> {
                 wx.setStorageSync('tel', res.data.data.tel)
+                wx.setStorageSync('userId',  res.data.data.id);
                 wx.setStorageSync('info', res.data.data)
                 if (res2.confirm) {
                   if(wx.getStorageSync("userInfo")){

@@ -5,36 +5,7 @@
   width:100%; 
   height:400rpx;
 }
-/*九宫格订座区域*/
-.category_root{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 20rpx 20rpx;
-}
-/* 大框格式 */
-.category_item{
-  display: flex;
-  flex-direction: column;
-  width: 150rpx;
-  height: 150rpx;
-  text-align: center;
-  margin: 20rpx;
-  border-radius: 30rpx;
-  width: 700rpx;
-  height: 350rpx;
-  align-items: center;
-  border: solid rgb(0, 0, 0) 5rpx;
-  background-color: rgb(255, 255, 255);
-  /* border-bottom:4px solid rgb(196, 196, 196) */
-}
-.categroy_item_title{
-  border: solid rgb(255, 5, 5) 8rpx;
-  font-size: 40rpx;
-  font-weight: 900;
- margin-left:500rpx;
- margin-bottom: 100rpx;
-}
+
 /* 地址内容设置 */
 .start_1{
 margin-right: 270rpx;
@@ -51,3 +22,80 @@ margin-right: 270rpx;
   margin-right: 525rpx;
   font-weight: 900;
 }
+
+/* 门店列表 */
+.canteen-list {
+  margin: 10px;
+}
+
+.canteen-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.canteen-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  flex-grow: 1; 
+}
+
+.canteen-status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-left: 10px;
+  /* 共同的样式属性 */
+}
+
+.canteen-status.open {
+  color: green; /* 根据营业状态调整颜色 */
+  padding: 4px 8px; /* 状态标签的内边距 */
+  border-radius: 4px; /* 轻微的圆角边框 */
+  background-color: #def1de; /* 背景颜色，可以根据状态改变 */
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.canteen-status.closed {
+  color: #d9534f; /* 一个较深的红色调以增加对比，适合背景 */
+  padding: 4px 8px; /* 状态标签的内边距，保持一致性 */
+  border-radius: 4px; /* 圆角边框，与营业中状态一致 */
+  background-color: #f2dede; /* 红色调的背景色，通常是较浅的红色 */
+  margin-bottom: 5px; /* 保持与营业中状态相同的边距 */
+  font-size: 14px; /* 文字大小保持一致 */
+}
+
+.canteen-address {
+  font-size: 12px;
+  color: grey;
+}
+.divider {
+  height: 1px;
+  background-color: #e0e0e0; /* 灰色 */
+  margin: 10px 0; /* 上下边距 */
+}
+
+.canteen-phone,
+.canteen-hours {
+  font-size: 14px;
+  margin-bottom: 3px;
+  color: grey;
+}
+
+.book-seat-btn {
+  background-color: black; /* 按钮背景颜色 */
+  color: white; /* 按钮文本颜色 */
+  border: none; /* 移除边框 */
+  border-radius: 24px; /* 圆角边框 */
+  font-size: 14px; /* 文本大小 */
+  margin-top: 18px;
+}
+

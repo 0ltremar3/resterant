@@ -8,7 +8,7 @@ click1:function(){
 //点击事件：去预约页面
 click2:function(){
   wx.navigateTo({
-    url: '/pages/myload/myload',
+    url: '/pages/myBookings/myBookings',
   })
 },
 })
